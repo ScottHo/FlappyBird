@@ -13,8 +13,11 @@ public class Logic : MonoBehaviour
     [ContextMenu("Increase Score")]
     public void addScore(int scoreToAdd)
     {
-        score += scoreToAdd;
-        scoreText.text = score.ToString();
+        if (gameOverScreen.activeSelf)
+        {
+            score += scoreToAdd;
+            scoreText.text = score.ToString();
+        }
     }
 
     public void restartGame()

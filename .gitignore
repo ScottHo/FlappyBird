@@ -77,3 +77,5 @@ crashlytics-build.properties
 /[Aa]ssets/TextMesh Pro/
 /[Aa]ssets/TextMesh Pro.meta
 /[Aa]ssets/unitytut*
+/Release/
+*.zip

@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 73810902}
   - component: {fileID: 73810906}
   - component: {fileID: 73810905}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bird
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +252,7 @@ MonoBehaviour:
   logic: {fileID: 0}
   myRigidbody2D: {fileID: 73810902}
   flap: 15
-  alive: 0
+  isAlive: 1
 --- !u!58 &73810906
 CircleCollider2D:
   m_ObjectHideFlags: 0

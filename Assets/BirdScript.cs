@@ -24,11 +24,24 @@ public class BirdScript : MonoBehaviour
         {
             myRigidbody2D.velocity = Vector2.up * flap;
         }
+        if (myRigidbody2D.position.y < -25.0)
+        {
+            Die();
+        }
+        if (myRigidbody2D.position.y > 28.0)
+        {
+            Die();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Die();
+    }
+
+    private void Die()
+    {
         logic.gameOver();
         isAlive = false;
-    }
+    } 
 }
