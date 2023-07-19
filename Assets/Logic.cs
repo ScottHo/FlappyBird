@@ -13,7 +13,7 @@ public class Logic : MonoBehaviour
     [ContextMenu("Increase Score")]
     public void addScore(int scoreToAdd)
     {
-        if (gameOverScreen.activeSelf)
+        if (!gameOverScreen.activeSelf)
         {
             score += scoreToAdd;
             scoreText.text = score.ToString();
